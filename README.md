@@ -73,6 +73,6 @@ curl http://localhost:8080/api/libros
 ## Verificación del despliegue
 
 ```bash
-curl https://toscano-post1-u12.up.railway.app/actuator/health
-curl https://toscano-post1-u12.up.railway.app/api/libros
+curl https://toscano-post1-u12-production.up.railway.app/actuator/health
+curl https://toscano-post1-u12-production.up.railway.app/api/libros
 ```
