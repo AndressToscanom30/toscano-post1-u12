@@ -87,3 +87,19 @@ curl http://localhost:8080/api/libros
 curl https://toscano-post1-u12-production.up.railway.app/actuator/health
 curl https://toscano-post1-u12-production.up.railway.app/api/libros
 ```
+
+## GitHub Secrets requeridos
+
+| Secret | Descripción |
+|--------|-------------|
+| `DOCKERHUB_USERNAME` | Usuario de Docker Hub |
+| `DOCKERHUB_TOKEN` | Access Token (Account Settings → Security → New Access Token) |
+
+Configurar en: `Settings → Secrets and variables → Actions → New repository secret`
+
+## Imagen Docker
+
+```bash
+docker pull andrestoscano30/toscano-post1-u12:latest
+docker run -p 8080:8080 -e SPRING_PROFILES_ACTIVE=dev andrestoscano30/toscano-post1-u12:latest
+```
