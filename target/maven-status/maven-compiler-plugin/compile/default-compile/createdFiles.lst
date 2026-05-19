@@ -1,1 +1,7 @@
+com\universidad\libros\controller\LibroController.class
 com\universidad\libros\exception\GlobalExceptionHandler.class
+com\universidad\libros\exception\LibroNotFoundException.class
+com\universidad\libros\repository\LibroRepository.class
+com\universidad\libros\model\Libro.class
+com\universidad\libros\LibrosApplication.class
+com\universidad\libros\service\LibroService.class
