@@ -3,6 +3,17 @@
 API REST de gestión de libros desarrollada con Spring Boot 3.2, 
 contenedorizada con Docker y desplegada en Railway.
 
+![CI/CD Status](https://github.com/AndressToscanom30/toscano-post1-u12/actions/workflows/ci.yml/badge.svg)
+
+## Pipeline CI/CD
+
+El pipeline se activa automáticamente en cada push a `main` y realiza:
+
+1. Compilación con Maven y ejecución de pruebas unitarias
+2. Generación de reporte de cobertura JaCoCo (artefacto descargable en cada ejecución)
+3. Construcción de imagen Docker con multi-stage build
+4. Publicación en Docker Hub con tags `latest` y `sha-<commit>`
+
 ## Tecnologías
 - Java 21 / Spring Boot 3.2
 - Spring Data JPA + PostgreSQL (producción) / H2 (desarrollo)
